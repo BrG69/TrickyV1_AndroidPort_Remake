@@ -1,2 +1,2 @@
-Improbable-outset:trickyMask:1
+Improbable Outset:trickyMask:1
 Madness:tricky:1
