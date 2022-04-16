@@ -11,7 +11,16 @@ class HealthIcon extends FlxSprite
 
 	public function new(char:String = 'bf', isPlayer:Bool = false)
 	{
-		super();
+	super();
+		switch(char)
+		{
+			case 'trickyMask' | 'tricky':
+				loadGraphic(Paths.image('IconGridTricky','clown'), true, 150, 150);
+
+				antialiasing = true;
+				animation.add('tricky', [2, 3], 0, false, isPlayer);
+				animation.add('trickyMask', [0, 1], 0, false, isPlayer);
+		default:
 		
 		loadGraphic(Paths.image('iconGrid'), true, 150, 150);
 
